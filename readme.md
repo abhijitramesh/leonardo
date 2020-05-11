@@ -15,3 +15,9 @@ Content loss makes sure that the content in the content image is presen in the g
 
 ## Gram Matrix
 What we need to do is actually find the correlation between two layers of a neural network in order to do this first we need to vectorise the image we can do this simply by flatterning the 3d image to a 2d vector, then we take the flattened image and its transpose and multiply them together to get the gram matrix.
+
+## Style Loss
+To calculate the style loss we calculate the mean squared distance between the target image and the style image's gram matrices. For all layers taken as a list we will multiply this weight by a style weight and then add all of them up.
+
+## Total Loss
+This is the sum of Style Loss and Content Loss. We can use this loss with back propogation and optimisation to reduce the loss.
