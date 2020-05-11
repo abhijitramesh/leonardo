@@ -21,3 +21,6 @@ To calculate the style loss we calculate the mean squared distance between the t
 
 ## Total Loss
 This is the sum of Style Loss and Content Loss. We can use this loss with back propogation and optimisation to reduce the loss.
+
+## Loss Weights
+Since we are using two different losses here the higher one might interfear with the backpogation step so what we need to do is multipy both these losses with two weights lets say alpha for content and beta for style this would make sure that the losses are taken equally into account so if we take the ratio between these two weights are actually changed so that it can effect the output image.
