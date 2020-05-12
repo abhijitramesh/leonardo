@@ -24,3 +24,5 @@ This is the sum of Style Loss and Content Loss. We can use this loss with back p
 
 ## Loss Weights
 Since we are using two different losses here the higher one might interfear with the backpogation step so what we need to do is multipy both these losses with two weights lets say alpha for content and beta for style this would make sure that the losses are taken equally into account so if we take the ratio between these two weights are actually changed so that it can effect the output image.
+
+Click [here](https://github.com/abhijitramesh/leonardo/blob/master/Style_Transfer_Exercise.ipynb) to see the implementation of [this](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) paper for Style Transfer
